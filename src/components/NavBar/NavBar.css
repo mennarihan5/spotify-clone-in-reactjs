@@ -1,0 +1,22 @@
+.navbar-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8rem;
+}
+.navbar-item {
+    color: var(--white);
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.navbar-item:hover {
+    color: var(--limeGreen);
+}
+.line {
+    cursor: default;
+}
+.line:hover {
+    color: var(--white);
+}
