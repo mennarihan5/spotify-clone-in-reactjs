@@ -8,7 +8,11 @@ body {
   font-size: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --black: #000;
+  --white: #fff;
+  --limeGreen: #1DD55F;
+  --mediumBlue: #1D75DE;
+  --padding1: 1.5%;
 }
+

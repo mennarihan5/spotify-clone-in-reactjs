@@ -1,22 +1,21 @@
 .navbar-list-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1.8rem;
-}
-.navbar-item {
-    color: var(--white);
     list-style: none;
+}
+.navbar-item a {
+    color: var(--white);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
 }
-.navbar-item:hover {
+.navbar-item a:hover {
     color: var(--limeGreen);
 }
 .line {
-    cursor: default;
-}
-.line:hover {
+    font-size: 1.2rem;
     color: var(--white);
 }
