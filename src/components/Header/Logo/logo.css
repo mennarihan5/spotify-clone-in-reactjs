@@ -1,4 +1,11 @@
-.main-logo {
-    width: 11.5%;
-    padding: var(--padding1);
+.main-logo img {
+    width: 9.5rem;
+}
+
+@media (max-width:990px) {
+    .main-logo img {
+        margin-left: -2rem;
+        width: 7rem;
+        padding: 10% 0;
+    }
 }

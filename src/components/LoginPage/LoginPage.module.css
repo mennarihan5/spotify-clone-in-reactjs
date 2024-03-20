@@ -1,0 +1,47 @@
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.loginForm {
+    width: 28rem;
+}
+.continue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facebookBtn {
+    background-color: var(--mediumBlue);
+    width: 100%;
+}
+.facebook {
+    color: var(--white);
+}
+.googleText {
+    color: grey;
+    
+}
+.divider span {
+    display: flex;
+    gap: 0.5rem;
+}
+.divider span::before {
+    
+}
+.divider span::before, 
+.divider span::after {
+    content: "";
+    flex: 1 1; 
+    border-bottom: 2px solid #000; 
+    margin: auto;
+    
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid black;
+}

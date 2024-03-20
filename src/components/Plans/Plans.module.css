@@ -1,0 +1,56 @@
+.planWrapper {
+    background-color: var(--mediumGrey);
+    padding: 4% 0;
+}
+.planTitle, .planDesc, .iconsWrapper {
+    text-align: center;
+}
+.planTitle {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: -0.3rem;
+}
+.planDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 0.5%;
+}
+.iconsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18%;
+    margin: auto;
+    padding-bottom: 3%;
+}
+.cardsWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+.card {
+    background-color: var(--white);
+    width: 14.5rem;
+    height: 33.7rem;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.learnMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learnMoreText {
+
+}
+.learnMoreBtn {
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black); 
+}
+.content ul {
+    list-style-image: url(../../app/assets/images/check.png);
+}

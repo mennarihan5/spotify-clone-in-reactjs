@@ -1,0 +1,38 @@
+.free-premium-month {
+    background-color: var(--mediumBlue);
+    text-align: center;
+    color: var(--white);
+    min-height: 20rem;
+    padding: 5rem 0;
+}
+.free-premium-month-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2.5%;
+}
+.free-premium-month-description-1 {
+    font-size: 1.5rem;
+    margin-bottom: 2.5%;
+}
+.free-premium-month-description-2 {
+    font-size: 0.7rem;
+    margin-top: 2.5%;
+}
+.underlined {
+    text-decoration: underline;
+}
+.free-premium-month-btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:672px) {
+    .free-premium-month-btn-wrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+

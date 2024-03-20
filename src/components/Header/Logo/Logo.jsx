@@ -1,23 +1,16 @@
 import './logo.css';
 import logoBlack from '../../../app/assets/images/logo-black.svg';
-import { ReactComponent as LogoWhiteSvg } from '../../../app/assets/images/logo-white.svg'
+import logoWhite from '../../../app/assets/images/logo-white.svg';
 
 
 const Logo = (props) => {
-    if(props.useWhite) {
+    const image = props.useWhite ? logoWhite : logoBlack;
+
         return(
             <a href='#/dashboard' className='main-logo'>
-                <LogoWhiteSvg />
+                <img src={image} alt='Logo' className='main-logo-img'/>
             </a>
         );
-    } else {
-        return(
-            <a href='#/dashboard' className='main-logo'>
-                <img src={logoBlack} alt='Logo' className='main-logo-img'></img>
-            </a>
-        );
-    }
-    
 }
 
 export default Logo;

@@ -11,6 +11,7 @@
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
+    text-wrap: nowrap;
 }
 .navbar-item a:hover {
     color: var(--limeGreen);
@@ -18,4 +19,24 @@
 .line {
     font-size: 1.2rem;
     color: var(--white);
+}
+
+@media (max-width:990px) {
+    .navbar-list-wrapper {
+        display: none;
+    }
+    .show-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: var(--black);
+        right: 0;
+        left: 0;
+        height: auto;
+        padding: 1.5rem 0;
+    }
+    .line {
+        display: none;
+    }
 }
