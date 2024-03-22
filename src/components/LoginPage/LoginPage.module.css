@@ -1,28 +1,67 @@
-.loginPage {
+.loginPage,  .header, .continue, .form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: ;
 }
-
+.header {
+    border-bottom: 1px solid var(--lightGrey);
+    width: 100%;
+    padding: 1rem 0;
+}
+.logo {
+    
+}
+.loginFormWrapper {
+    padding: 2rem 0;
+}
 
 .loginForm {
     width: 28rem;
 }
 .continue {
+    
+}
+.facebookBtn, .appleBtn, .googleBtn {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    width: 28rem;
+    height: 3rem;
 }
 .facebookBtn {
     background-color: var(--mediumBlue);
-    width: 100%;
 }
-.facebook {
-    color: var(--white);
+.facebookIcon {
+    color: var(--mediumBlue);
+    font-size: 0.9rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 0.2rem;
 }
+.appleIcon {
+    font-size: 1.4rem;
+}
+.googleIcon {
+    padding: 1.8%;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 0px #cccccc;
+    font-size: 1.3rem;
+}
+.googleBtn {
+    border: 1px solid black;
+    margin-bottom: 3%;
+}   
 .googleText {
-    color: grey;
-    
+    color: grey;  
+}
+.btnText {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-left: 3%;
 }
 .divider span {
     display: flex;
@@ -35,13 +74,10 @@
 .divider span::after {
     content: "";
     flex: 1 1; 
-    border-bottom: 2px solid #000; 
+    border-bottom: 2px solid var(--lightGrey); 
     margin: auto;
     
 }
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--lightGrey);
 }
