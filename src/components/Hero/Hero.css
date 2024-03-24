@@ -28,7 +28,6 @@
     justify-content: center;
     align-items: center;
 }
-
 @media (max-width:672px) {
     .free-premium-month-btn-wrapper {
         flex-direction: column;

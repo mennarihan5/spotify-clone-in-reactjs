@@ -8,9 +8,9 @@ import { aboutMenu, communities, legalMenu, usefulLinks } from './data.js';
 
 function Menu({title, options}) {
     return(
-        <nav className={styles.menuCol}>
-            <h5 className={styles.title}>{title || <>&nbsp;</>}</h5>
+        <nav>
             <ul className={styles.menuList}>
+            <h5 className={styles.title}>{title || <>&nbsp;</>}</h5>
                 {
                     options && options.map((option) => {
                         return(
@@ -58,8 +58,11 @@ function Footer() {
                     <FaFacebookF />
                 </div>
                 <div className={styles.copyrights}>
-                    <p><FaEarthAfrica />India (English)</p>
-                    <p>© 2023 Spotify AB</p>
+                    <div className={styles.language}>
+                        <FaEarthAfrica />
+                        <p>India (English)</p>
+                    </div>
+                    <p className={styles.date}>© 2023 Spotify AB</p>
                 </div>
             </div>
         </footer>

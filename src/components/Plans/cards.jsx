@@ -15,13 +15,13 @@ function Cards(props) {
                 <p className={styles.price}>{props.price} {priceOffer}</p>
                 <p className={styles.accounts}>{props.accounts} {props.accountsText}</p>
             </div>
-            <div className={styles.content}>
-                <ul>
+            <div className={styles.contentWrapper}>
+                <ul className={styles.content}>
                     {
                         props.features && props.features.map((feature) => <li className={styles.item}><p>{feature}</p></li>)
                     }
                 </ul>
-                <Button onClick={() => {}} type="primaryWide">
+                <Button className={styles.button} onClick={() => {}} type="primaryWide">
                     VIEW PLANS
                 </Button>
             </div>

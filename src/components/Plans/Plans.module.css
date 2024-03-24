@@ -10,11 +10,13 @@
 .planTitle {
     font-weight: 700;
     font-size: 2.4rem;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
     margin-bottom: -0.3rem;
 }
 .planDesc {
     font-weight: 400;
     font-size: 1rem;
+    font-size: clamp(0.9rem, 3vw, 1rem);
     padding-bottom: 0.5%;
 }
 .iconsWrapper {
@@ -32,19 +34,19 @@
     align-items: center;
     margin: auto;
     width: 80%;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 .card {
     background-color: var(--white);
-    max-width: 14.6rem;
-    height: 33.7rem;
+    max-width: 17rem;
     border-radius: 10px;
-    padding: 3.5% 2%;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 .header {
+    height: 11rem;
+    margin: 1.5rem;
+    padding-bottom: 1rem;
     border-bottom: 2px solid var(--lightGrey2);
-    height: 11.6rem;
 }
 .free, .onetime {
     width: fit-content;
@@ -68,12 +70,19 @@
 .price, .accounts {
     font-weight: 400;
 }
-.content {
-    height: 19rem;
+.contentWrapper {
+    height: 20rem;
+    width: 17rem;
+    margin-top: -1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: fit-content;
+    border-bottom: 3px solid var(--mediumGrey);
+    box-shadow: 0px 10px 12px var(--mediumGrey);
+}
+.content {
+    padding: 0 20%;
+ 
 }
 .item {
     width: 100%;
@@ -87,9 +96,12 @@
     margin-top: -2%;
     position: absolute;
 }
+.button {
+    margin: 0 auto;
+}
 .footer {
-    height: 5rem;
-    padding: 2% 0;
+    height: 3rem;
+    padding: 2% 6%;
 }
 .footer, .footer a {
     color: var(--darkGrey);
@@ -126,9 +138,6 @@
     .cardsWrapper {
         justify-content: center;
     }
-    .card {
-        padding: 9%;
-    }
     .learnMore {
         text-align: center;
         justify-content: center;
@@ -138,9 +147,6 @@
 @media (min-width:600px) and (max-width: 1200px) {
     .cardsWrapper {
         justify-content: space-evenly;
-    }
-    .card {
-        padding: 5%;
     }
     .learnMore {
         text-align: center;
