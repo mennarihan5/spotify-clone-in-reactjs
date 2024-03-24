@@ -4,6 +4,7 @@
     color: var(--white);
     min-height: 20rem;
     padding: 5rem 0;
+    font-family: 'Helvetica', 'Arial';
 }
 .free-premium-month-title {
     font-weight: 700;

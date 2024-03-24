@@ -9,12 +9,12 @@ import { aboutMenu, communities, legalMenu, usefulLinks } from './data.js';
 function Menu({title, options}) {
     return(
         <nav className={styles.menuCol}>
-            <h5>{title || <>&nbsp;</>}</h5>
+            <h5 className={styles.title}>{title || <>&nbsp;</>}</h5>
             <ul className={styles.menuList}>
                 {
                     options && options.map((option) => {
                         return(
-                            <li>
+                            <li className={styles.item}>
                                 <a href={option.url}>{option.name}</a>
                             </li>
                         )
@@ -31,7 +31,7 @@ function Footer() {
             <div className={styles.menu}>
                 <div className={styles.topMenu}>
                     <div>
-                        <Logo useWhite={true}/>
+                        <div className={styles.logo}><Logo useWhite={true}/></div>
                     </div>
                     <div className={styles.menuWrapper}>
                         <Menu title="" options={aboutMenu}/>

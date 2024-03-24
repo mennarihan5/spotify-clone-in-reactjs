@@ -9,16 +9,16 @@ function Cards(props) {
     return(
         <div className={styles.card}>
             <div className={styles.header}>
-                <div >{props.free}</div>
-                <div>One-time plans available</div>
-                <h2 >{props.planName}</h2>
-                <p >{props.price} {priceOffer}</p>
-                <p >{props.accounts} {props.accountsText}</p>
+                {props.free && <div className={styles.free}>{props.free}</div>}
+                <div className={styles.onetime}>One-time plans available</div>
+                <h2 className={styles.planName}>{props.planName}</h2>
+                <p className={styles.price}>{props.price} {priceOffer}</p>
+                <p className={styles.accounts}>{props.accounts} {props.accountsText}</p>
             </div>
             <div className={styles.content}>
                 <ul>
                     {
-                        props.features && props.features.map((feature) => <li>{feature}</li>)
+                        props.features && props.features.map((feature) => <li className={styles.item}><p>{feature}</p></li>)
                     }
                 </ul>
                 <Button onClick={() => {}} type="primaryWide">

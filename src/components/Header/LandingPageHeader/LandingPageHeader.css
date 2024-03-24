@@ -2,6 +2,7 @@
     background-color: var(--black);
     height: 5rem;
     min-width: 20rem;
+    font-family: 'Helvetica', 'Arial';
 }
 .header {
     width: 80%;

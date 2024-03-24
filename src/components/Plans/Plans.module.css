@@ -1,6 +1,8 @@
 .planWrapper {
     background-color: var(--mediumGrey);
     padding: 4% 0;
+    font-family: 'Helvetica', 'Arial';
+    font-weight: 700;
 }
 .planTitle, .planDesc, .iconsWrapper {
     text-align: center;
@@ -26,31 +28,124 @@
 .cardsWrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin: auto;
     width: 80%;
+    gap: 0.5rem;
 }
 .card {
     background-color: var(--white);
-    width: 14.5rem;
+    max-width: 14.6rem;
     height: 33.7rem;
     border-radius: 10px;
-    padding: 2%;
+    padding: 3.5% 2%;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
-.learnMore {
+.header {
+    border-bottom: 2px solid var(--lightGrey2);
+    height: 11.6rem;
+}
+.free, .onetime {
+    width: fit-content;
+    padding: 2% 4%;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.free {
+    background-color: var(--mediumBlue);
+    color: var(--white);
+    margin-bottom: 5%;
+}
+.onetime {
+    color: var(--mediumBlue);
+    border: 1px solid var(--mediumBlue);
+}
+.planName {
+    font-size: 1.5rem;
+    margin-bottom: -5%;
+}
+.price, .accounts {
+    font-weight: 400;
+}
+.content {
+    height: 19rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+}
+.item {
+    width: 100%;
+    font-weight: 400;
+    padding: 0.7rem;
+    margin-left: -10%;
+    list-style-image: url(../../app/assets/images/check.png);
+    position: relative;
+}
+.item p {
+    margin-top: -2%;
+    position: absolute;
+}
+.footer {
+    height: 5rem;
+    padding: 2% 0;
+}
+.footer, .footer a {
+    color: var(--darkGrey);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.learnMore {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin: 4% auto;
+    padding: 0.2% 1%;
+    max-width: 45rem;
+    min-height: 5rem;
+    box-shadow: 0 0 6px 2px var(--lightGrey2);
+    border-radius: 10px;
 }
 .learnMoreText {
-
+    font-size: 1.4rem;
+    font-size: clamp(1rem, 3vw ,1.4rem);
 }
 .learnMoreBtn {
     background-color: var(--white);
     color: var(--black);
-    border: 2px solid var(--black); 
+    border: 2px solid var(--black);
+    font-weight: 700;
+    font-size: clamp(0.6rem, 3vw ,1rem);
 }
-.content ul {
-    list-style-image: url(../../app/assets/images/check.png);
+
+@media (max-width:600px) {
+    .cardsWrapper {
+        justify-content: center;
+    }
+    .card {
+        padding: 9%;
+    }
+    .learnMore {
+        text-align: center;
+        justify-content: center;
+        padding: 3% 1%;
+    }
 }
+@media (min-width:600px) and (max-width: 1200px) {
+    .cardsWrapper {
+        justify-content: space-evenly;
+    }
+    .card {
+        padding: 5%;
+    }
+    .learnMore {
+        text-align: center;
+        justify-content: center;
+        padding: 3% 1%;
+    }
+}
+

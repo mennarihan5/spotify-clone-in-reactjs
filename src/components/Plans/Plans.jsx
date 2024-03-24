@@ -11,7 +11,6 @@ const Plans = () => {
         } else {
             return null;
         }
-
     }
 
     return(

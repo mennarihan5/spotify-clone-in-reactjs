@@ -30,7 +30,6 @@ export const paymentIcons = [
 
 export const pricingList = [
     {
-        free: null,
         planName: "Mini",
         price: "₹7",
         priceText: false,
@@ -44,7 +43,7 @@ export const pricingList = [
         terms: false
     },
     {
-        free: null,
+        free: "1month free",
         planName: "Individual",
         price: "₹119",
         priceText: true,
@@ -58,7 +57,7 @@ export const pricingList = [
         terms: true
     },
     {
-        free: "not free",
+        free: "1month free",
         planName: "Mini",
         price: "₹149",
         priceText: true,
@@ -73,7 +72,7 @@ export const pricingList = [
         terms: true
     },
     {
-        free: null,
+        free: "1month free",
         planName: "Mini",
         price: "₹179",
         priceText: true,

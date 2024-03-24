@@ -1,20 +1,34 @@
 .footer {
     height: 30rem;
+    padding: 4% 7%;
     background-color: var(--black);
     color: var(--white);
     display: flex;
     justify-content: space-between;
-    
+    font-family: 'Helvetica', 'Arial';
 }
 .menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.menuList {
+    
+}
+.title {
+    
+}
 .topMenu {
     display: flex;
     gap: 2rem;
-   
+}
+.menuCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item {
+    padding-bottom: 20%;
 }
 .menuWrapper {
     display: flex;
@@ -51,7 +65,12 @@
 }
 .icons {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
 }
 .icons svg {
-    
+    background-color: var(--darkGrey2);
+    padding: 8%;
+    border-radius: 50%;
 }

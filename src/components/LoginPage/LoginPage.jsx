@@ -32,18 +32,18 @@ function LoginPage() {
                         <span>OR</span>
                     </div>
                     <div className={styles.form}>
-                        <label for={styles.username}>Email address or username</label><br/>
-                        <input type='text' id={styles.username} placeholder='Email address or username'/> <br/>
-                        <label for={styles.password}>Password</label><br/>
+                        <label for="username" className={styles.usernameLabel}>Email address or username</label><br/>
+                        <input type='text' id="username" className={styles.username} placeholder='Email address or username'/> <br/>
+                        <label for="password" className={styles.passwordLabel}>Password</label><br/>
                         <div className={styles.passwordWrapper}>
-                            <input type='password' id={styles.password} placeholder='Password'/>
+                            <input type='password' id="password" className={styles.password}  placeholder='Password'/>
                             <BiHide className={styles.hide}/>
                         </div><br/>
-                        <p><a href="#/forgotPassword">Forgot your password?</a></p> <br/>
+                        <p className={styles.forgotPass}><a href="#/forgotPassword">Forgot your password?</a></p> <br/>
                         <div className={styles.login}>
                             <div className={styles.rememberMe}>
-                                <input type='checkbox' id={styles.remember}/>
-                                <label for={styles.remember}>Remember me</label>
+                                <input className={styles.remember} type='checkbox' id="remember"/>
+                                <label className={styles.rememberTxt} for="remember">Remember me</label>
                             </div>
                             <Button className={styles.loginBtn} onClick={()=>{}} type="primary">
                                 log in

@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif, 'Inter';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
@@ -16,6 +16,13 @@ body {
   --mediumGrey: #EFEFEF;
   --lightGrey: #D9DADC;
   --lightGrey2: #cccccc;
+  --lightGrey3: #878787;
+  --lightGrey4: #6A6A6A;
+  --darkGrey: #535353;
+  --darkGrey2: #222326;
+  --lightGreen: #1ED760;
+
+
 
   --padding1: 0 1.5%;
 }
