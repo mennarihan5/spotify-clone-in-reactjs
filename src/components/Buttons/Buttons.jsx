@@ -22,7 +22,7 @@ import './Buttons.css';
 //     );
 // }
 
-function Button(props) {
+function Button({children, ...props}) {
     const classNames = {
         primary: "primary",
         secondary: "secondary",
@@ -32,9 +32,9 @@ function Button(props) {
     const className = classNames[props.type] || classNames.primary;
     
     return(
-        props.onClick ? <button className={`${className} ${props.className}`}>{props.children}</button>
+        props.onClick ? <button {...props} onClick={props.onClick} className={`${className} ${props.className}`}>{children}</button>
             :
-        <a href="#" className={`${className} ${props.className}`}>{props.children}</a>
+        <a href="#" className={`${className} ${props.className}`}>{children}</a>
     )
 }
 
