@@ -15,20 +15,20 @@ const NavBar = () => {
         <div className='hamburger-icon' onClick={toggleMenu}><FiAlignJustify /></div>
             <ul className={`navbar-list-wrapper ${showMenu? 'show-nav' : ''}`}>
                 <li className='navbar-item'>
-                    <a href='#/premium'>Premium</a>
+                    <a href='/premium'>Premium</a>
                 </li>
                 <li className='navbar-item'>
-                    <a href='#/support'>Support</a>
+                    <a href='/support'>Support</a>
                 </li>
                 <li className='navbar-item'>
-                    <a href='#/download'>Download</a>
+                    <a href='/download'>Download</a>
                 </li>
                 <li className='navbar-item line'>|</li>
                 <li className='navbar-item'>
-                    <a href='#/signup'>Sign up</a>
+                    <a href='/signup'>Sign up</a>
                 </li>
                 <li  className='navbar-item'>
-                    <a href='#/login'>Log in</a>
+                    <a href='/login'>Log in</a>
                 </li>
             </ul>
         </nav>

@@ -1,5 +1,5 @@
 import styles from './LoginPage.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Logo from "../../components/Header/Logo/Logo.jsx";
 import Button from "../Buttons/Buttons.jsx";
 import { FaFacebookF } from "react-icons/fa";
@@ -7,6 +7,8 @@ import { FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { BiHide } from "react-icons/bi";
 import { toast } from 'react-toastify';
+import { isUserLogged } from '../../utils/user.js';
+import { routes } from '../../routes.js';
 
 function LoginPage() {
     const [email, setEmail] = useState("");
@@ -49,6 +51,8 @@ function LoginPage() {
         })
         .then((response) => {
             console.log("Resolved", response);
+            localStorage.setItem('user', JSON.stringify(response));
+            window.location.href = routes.dashboard;
         } )
         .catch((error) => {
             toast.error('This is an error!');
@@ -60,11 +64,17 @@ function LoginPage() {
               
     }
 
+    useEffect(() => {
+        const user = isUserLogged()
+        if (user) {
+            window.location.href = routes.dashboard();
+        }
+    }, [])
 
     return(
         <div className={styles.loginPage}>
             <div className={styles.header}>
-                <Logo className={styles.logo}/>
+                <a href='/home'><Logo className={styles.logo}/></a>
             </div>
             <div className={styles.loginFormWrapper}>
                 <div className={styles.loginForm}>
