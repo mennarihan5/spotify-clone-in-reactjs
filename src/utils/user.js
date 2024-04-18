@@ -16,5 +16,14 @@ export const appSettings = () => {
 }
 
 export const downloadApp = () => {
-    
+    const app = appSettings();
+    localStorage.setItem('app-settings', JSON.stringify(
+        {...appSettings,
+            hasInstalledApp: true
+        }));
+    const confirm = window.confirm("Have you downloaded the app?");
+    if (confirm) {
+        console.log(confirm)
+        window.location.reload();
+    }
 }

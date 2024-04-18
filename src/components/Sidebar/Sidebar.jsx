@@ -3,7 +3,7 @@ import Logo from '../Header/Logo/Logo';
 import styles from './Sidebar.module.css';
 import { recommendations, sidebarMenu } from './data.js';
 import { Link } from "react-router-dom";
-import { appSettings } from '../../utils/user.js';
+import { appSettings, downloadApp } from '../../utils/user.js';
 import { FiArrowDownCircle } from "react-icons/fi";
 
 export const Sidebar = () => {
@@ -35,10 +35,10 @@ export const Sidebar = () => {
                     })
                 }
                 {
-                !settings.hasInstalledApp && <div className={styles[`install-app`]}>
-                <span className={styles[`install-icon`]}><FiArrowDownCircle /></span>
-                <span className={styles.install}>Install App</span>
-                </div>
+                    !settings.hasInstalledApp && <div className={styles[`install-app`]} onClick={downloadApp}>
+                    <span className={styles[`install-icon`]}><FiArrowDownCircle /></span>
+                    <span className={styles.install}>Install App</span>
+                    </div>
                 }
             </div>
         </aside>

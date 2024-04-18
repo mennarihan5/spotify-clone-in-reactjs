@@ -28,6 +28,7 @@ function Button({children, ...props}) {
         secondary: "secondary",
         primaryWide: "primary-wide"
     }
+    
 
     const className = classNames[props.type] || classNames.primary;
     
