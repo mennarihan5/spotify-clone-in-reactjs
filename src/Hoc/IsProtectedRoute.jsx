@@ -6,7 +6,7 @@ function IsProtectedRoute({children}) {
     if (user) {
         return children;
     }
-    window.location.href = './login';
+    window.location.href = './home';
     return null;
 }
 
