@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/',
-    element: <IsProtectedRoute><LandingPage /></IsProtectedRoute>
+    element: <LandingPage />
   },
   {
     path: routes.dashboard(),
