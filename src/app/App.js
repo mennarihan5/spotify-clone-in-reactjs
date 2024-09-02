@@ -12,7 +12,7 @@ import { MainDashboard } from '../components/Dashboard/MainDashoard/MainDashboar
 const router = createBrowserRouter([
   {
     path: '',
-    element:<IsProtectedRoute><LandingPage /></IsProtectedRoute>
+    element:<LandingPage />
   },
   {
     path: '/',
