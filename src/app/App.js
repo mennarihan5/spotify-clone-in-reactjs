@@ -1,10 +1,11 @@
 import './App.css';
 import{RouterProvider, createBrowserRouter} from 'react-router-dom';
-import LandingPage from '../components/LandingPage/LandingPage.jsx';
-import LoginPage from '../components/LoginPage/LoginPage.jsx';
+import LandingPage from '../pages/LandingPage/LandingPage.jsx';
+import LoginPage from '../pages/LoginPage/LoginPage.jsx';
 import IsProtectedRoute from '../Hoc/IsProtectedRoute.jsx';
 import {routes} from '../routes.js';
 import DashboardPage from '../components/Dashboard/Dashboard.jsx';
+import { MainDashboard } from '../components/Dashboard/MainDashoard/MainDashboard.jsx';
 // import {UseNavigation} from "./Hooks/useNavigation.jsx";
 
 
@@ -19,7 +20,17 @@ const router = createBrowserRouter([
   },
   {
     path: routes.dashboard(),
-    element: <IsProtectedRoute><DashboardPage /></IsProtectedRoute>
+    element: <IsProtectedRoute><DashboardPage /></IsProtectedRoute>,
+    children: [
+      {
+        path: '',
+        element: <MainDashboard />
+      },
+      {
+        path: routes.playlist(),
+        element: <h1>hellooooooo</h1>
+      }
+    ]
   },
   {
     path: 'login',

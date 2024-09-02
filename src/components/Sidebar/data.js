@@ -24,17 +24,17 @@ export const sidebarMenu = [
     },
     {
         name: "Create Playlist",
-        url: routes.dashboard,
+        url: routes.playlist,
         icon: <Plus />
     },
     {
         name: "Liked Songs",
-        url: routes.dashboard,
+        url: routes.likedSongs,
         icon: <Heart />
     },
     {
         name: "Your Episodes",
-        url: routes.dashboard,
+        url: routes.episodes,
         icon: <Bookmark />
     },
 ]
